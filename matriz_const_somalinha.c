@@ -27,7 +27,7 @@ int main()
     
 return 0;
 }
-//1ª função
+//1ª função----------------------------------
 void preenchematriz(int matriz[tam][], int tam);
 {
     int i, d;
@@ -40,7 +40,7 @@ void preenchematriz(int matriz[tam][], int tam);
         }
     }
 }
-//2ª função
+//2ª função----------------------------------
 void somalin(int matriz[tam][], int lin, int tam);
 {
     int i, soma=0;
@@ -50,7 +50,7 @@ void somalin(int matriz[tam][], int lin, int tam);
     }
     printf("%d",soma);
 }
-//3ª função
+//3ª função-----------------------------------
 void somacol(int matriz[tam][], int col, int tam);
 {
     int i, soma=0;
@@ -60,7 +60,7 @@ void somacol(int matriz[tam][], int col, int tam);
     }
     printf("%d", soma);
 }
-//4ª função
+//4ª função----------------------------------
 void somadiag(int matriz[tam][], int tam);
 {
     int i, soma=0;
@@ -70,7 +70,7 @@ void somadiag(int matriz[tam][], int tam);
     }
     printf("%d", soma);
 }
-//5ª função
+//5ª função---------------------------------
 void somapar(int matriz[tam][], int tam);
 {
     int i, j, soma=0;

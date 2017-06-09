@@ -1,7 +1,10 @@
 /*
-Certa firma fez uma pesquisa no DETRAN, para isso foi solicitado o 
-sexo dos entrevistados e seus pontos obtidos em carteira. Sabendo-se que teremos 
+Certa firma fez uma pesquisa no DETRAN, 
+para isso foi solicitado o 
+sexo dos entrevistados e seus pontos 
+obtidos em carteira. Sabendo-se que teremos 
 que entrevistas várias pessoas (a qtde deverá ser informada pelo user),
+
 fazer um programa que faça a pesquisa, calcule e escreva;
 
 a) O nº de pessoas que tiveram multa superio a 14 pontos;
@@ -23,7 +26,6 @@ int main()
 {
     int tam=0,i;
     struct tlista tickets;
-    
     printf("Qnts pessoas foram entrevistadas");
     scanf("%d", &tam);
     
@@ -37,7 +39,6 @@ int main()
     multamais(tickets,tam);
     semmultas(tickets,tam);
     multafem(tickets, tam);
-    
 return 0;
 }
 
