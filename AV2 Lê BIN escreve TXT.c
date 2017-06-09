@@ -12,3 +12,38 @@ Gere um arquivo, e:\veloc.txt, contendo a placa dos ônibus e a respectiva veloc
 a média de velocidade individual superio a 80 km/h. Obs.: Velocidade = Distância/tempo
 
 */
+struct tlista
+{
+    char placa[7];
+    float kmi;
+    float kmf;
+    float tempo;
+};
+
+int main()
+{
+    int speed, cont;
+    struct tlista listaux
+    int i;
+    
+    FILE *arq=fopen("Trajeto.bin", "rb");
+    FILE *arq2=fopen("Veloc.txt");
+    
+    if(arq==NULL || arq2==NULL)
+        return 1;
+        
+    else
+    {
+        while(!feof(arq))
+        {
+            fread(&listaux, sizeof(struct tlista),1,arq);
+                speed=(listaux.kmf-listaux.kmi)/listaux.tempo;
+            
+            if(speed>80)
+                fprintf(&arq2, "Placa:%d Vel:%f.2f", listaux.placa, speed);
+        }
+    fclose(arq);
+    fclose(arq2);
+    }
+return 0;
+}
