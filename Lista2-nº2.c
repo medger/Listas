@@ -58,7 +58,7 @@ return 0;
 //-----
 int menor(int *vet)
 {
-    int menor, i;
+    int menor=9999, i;
     for(i=0;i<tam;i++)
     {
         if(vet[i]<menor)
