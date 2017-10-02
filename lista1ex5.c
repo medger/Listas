@@ -10,14 +10,10 @@ int main()
     scanf("%d",&base);
     printf("Digite um número EXPOENTE: ");
     scanf("%d", &expo);
-    
     result=potenciaint(base, expo);
-    
     printf("%d", result);
-    
 return 0;
 }
-
 int potenciaint(int base, int expo)
 {
     int i;
