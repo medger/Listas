@@ -7,13 +7,10 @@ int main()
     int num=0, aux=0;
     printf("Entre com um numero inteiro: ");
     scanf("%d",&num);
-    
     aux=fatorial(num);
-    
     printf("O valor fatorial de %d é: %d",num,aux);
 return 0;    
 }
-
 int fatorial(int num)
 {
     int fat=1;

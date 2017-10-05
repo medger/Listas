@@ -18,13 +18,13 @@ int moldura(int a, int b, char c)
 {
     int i, j, cont=0;
     for(i=1;i<=a;i++)
-    {
+    { 
         for(j=1;j<=b;j++)
         {
             if (i==1||i==a)
             {
-            printf("%c",c);
-            cont++;  
+                printf("%c",c);
+                cont++;  
             }
             else
             {

@@ -6,7 +6,6 @@ struct produto
     float valor;
     int qtdevend;
 };
-
 int main()
 {
     struct produto prod;
@@ -17,9 +16,6 @@ int main()
     int maisvend=-1, posmaiorvalor, posmaisvendido;
     int j=0;
     int i;
-    
-    //-------------
-    //-------------
     FILE *arqProd;
     FILE *arqBin;
     arqProd=fopen("Produtos.txt","r");
@@ -41,8 +37,7 @@ int main()
     fclose(arqProd);
     
     lstprodutos=(struct produtos*)malloc(cont*sizeof(struct produto));
-    //-------------
-    //-------------
+
     arqProd=fopen("Produtos.txt", "r");
     aux=fscanf(ArqProd,"%d %s %f %d", &lstprodutos[j].cod,&lstprodutos[j].nome,&lstprodutos[j].valor, &lstprodutos[j].qtdevend);
     while(aux!=EOF)
@@ -51,8 +46,7 @@ int main()
         aux=fscanf(ArqProd,"%d %s %f %d", &lstprodutos[j].cod,&lstprodutos[j].nome,&lstprodutos[j].valor, &lstprodutos[j].qtdevend);
     }
     fclose(ArqProd);
-    //-------------
-    //-------------
+   
     for(i=0,i<cont;i++)
     {
         if(lstprodutos[i].valor>maiorvalor)

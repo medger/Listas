@@ -12,10 +12,9 @@ void somalin(int matriz[tam][], int lin, int tam);
 void somacol(int matriz[tam][], int col, int tam);
 void somadiag(int matriz[tam][], int tam);
 void somapar(int matriz[tam][], int tam);
-
 int main()
 {
-    int matriz [tam][tam];
+    int matriz[tam][tam];
     
     preenchematriz(matriz,tam);
     somalin(matriz, 5, tam);
